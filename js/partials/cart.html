@@ -1,0 +1,9 @@
+<div ng-repeat="item in items" class="my-cart">
+  {{item.name}}<br>
+  Quantity: <input type="number" min="1" ng-model="item.quantity">
+  <br>
+  Price: ${{item.price}} x {{item.quantity}} = ${{item.price * item.quantity}}
+  <br>
+  <a ng-click="remove(item)" class="pointer">Remove</a>
+
+</div>

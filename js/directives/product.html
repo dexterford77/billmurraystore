@@ -1,0 +1,22 @@
+<div class="product-container">
+  <div class="row">
+    <div class="col-md-12">
+      <h4>{{ product.name }}</h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 price-box">
+      {{ product.price | currency:"$":0}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 pointer" ui-sref="products.show({id: product.id})">
+      <img ng-src="{{ product.image }}" class="murray-small">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 cart-add-box">
+      <button class="btn btn-default" ng-click="addToCart(product, 1)" ui-sref="cart">Add to cart!</button>
+    </div>
+  </div>
+</div>

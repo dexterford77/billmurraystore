@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-md-2 col-md-offset-10">
+    Filter by category:
+    <select ng-model="categoryFilter">
+      <option value=""></option>
+      <option ng-repeat="category in categories" value="{{category.id}}">{{category.name}}
+      </option>
+    </select>
+  </div>
+</div>
+
+<div class="row">
+  <product ng-repeat="product in products | toArrayFilter | filter : {category: {id: categoryFilter}}" class="col-md-3 text-center">
+  </product>
+</div>

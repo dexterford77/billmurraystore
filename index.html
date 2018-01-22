@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="store">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Viking Store</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js"></script>
+</head>
+
+<body ng-cloak>
+
+<nav class="navbar navbar-default" ng-controller="CartCtrl">
+  <div class="pull-left nav-header">
+    <h3>Generic Store</h3>
+  </div>
+  <div class="pull-right nav-cart pointer" ui-sref="cart">
+    <h4>Your Cart</h4>
+    <small>{{cartSize()}} items in cart</small>
+  </div>
+</nav>
+
+<div class="jumbotron text-center pointer" ui-sref="products.index">
+  <div class="container">
+    <h1>Buy things at this store!</h1>
+    <h2><small>It's what you want</small></h2>
+  </div>
+</div>
+<div class="page-header text-center">
+  <h3><small><i>Purchase objects below!</i></small></h3>
+</div>
+
+<main ui-view class="container-fluid">
+</main>
+
+<footer class="text-center">
+  <h4>Please do not hesitate to cogitate the plausibility sending us personalized messages to the below-listed contact location!</h4>
+  <ul>
+    <li>I live on a boat, probably...</li>
+    <li>So just find me there I guess</li>
+  </ul>
+</footer>
+
+</body>
+
+<!-- App -->
+<script src="js/app.js"></script>
+
+<!-- Services -->
+<script src="js/services/category_service.js"></script>
+<script src="js/services/product_service.js"></script>
+<script src="js/services/shopping_cart_service.js"></script>
+
+<!-- Controllers -->
+<script src="js/controllers/cart_ctrl.js"></script>
+<script src="js/controllers/products_index_ctrl.js"></script>
+<script src="js/controllers/products_show_ctrl.js"></script>
+
+<!-- Directives -->
+<script src="js/directives/product.js"></script>
+
+<!-- Filters -->
+<script src="js/filters/to_array_filter.js"></script>
+
+</html>

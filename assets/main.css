@@ -1,0 +1,60 @@
+.murray-small {
+  width: 100px;
+  height: 100px;
+}
+
+.murray-large {
+  width: 10%;
+  height: 10%;
+}
+
+.price-box {
+  margin-top: -5px;
+  margin-bottom: 7px;
+}
+
+.cart-add-box {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.product-container {
+  border: solid 1px black;
+  background-color: pink;
+  margin: 5px;
+}
+
+select {
+  width: 180px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.page-header {
+  margin-top: -15px;
+}
+
+.item-show {
+  background-color: lightgreen;
+  padding: 5px;
+}
+
+.adjust-left {
+  margin-left: -20px;
+}
+
+.nav-header {
+  margin-top: -7px;
+  margin-left: 10px;
+}
+
+.nav-cart {
+  margin-right: 10px;
+  margin-top: 6px;
+}
+
+.my-cart {
+  background-color: lightblue;
+}

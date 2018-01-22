@@ -1,0 +1,37 @@
+<div class="text-center item-show">
+  <div class="row">
+    <div class="col-md-12">
+      <h3>{{product.name}}</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      {{product.price | currency:"$":0}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      {{product.description}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <img ng-src="{{product.image}}" class="murray-large">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      Category: {{product.category.name}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 adjust-left">
+      Quantity: <input type="number" min="1" ng-model="quantity">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <button class="btn btn-default" ng-click="addToCart(product, quantity)" ui-sref="cart">Add to Cart!</button>
+    </div>
+  </div>
+</div>
